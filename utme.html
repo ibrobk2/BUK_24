@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Checker</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Admission Status Checker</h2>
+        <form action="">
+            <label for="score">Enter your JAMB/UTME Score:</label>
+            <br>
+            <input type="text" placeholder="UTME Score" id="score">
+
+            <button id="btn">Check Admission Status</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            var score = document.getElementById("score").value;
+
+            if(score>=180){
+                alert("Congrats, you are eligible for Admission");
+            }
+            else{
+                alert("Sorry, you are not eligible for Admission");
+            }
+        })
+    </script>
+</body>
+</html>
